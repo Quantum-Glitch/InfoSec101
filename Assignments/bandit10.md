@@ -1,9 +1,9 @@
 # Bandit Level 10 to 11 Writeup
 
-Author: [Akshay K Muraleedharan][GITHUBPROFILE]
+Author: [Akshay K Muraleedharan](https://github.com/Quantum_Glitch)
 
 
-Problem Page: [Bandit10][BANDITPAGE]
+Problem Page: [Bandit10](https://overthewire.org/wargames/bandit/bandit11.html)
 ### List of Commands Used
 * ssh  
 Sets up SSH Connection to the OverTheWire Game Server.
@@ -22,5 +22,3 @@ expect "$ "
 send -- "base64 -d data.txt \r"  
 send -- "exit\r"  
 interact
-[GITHUBPROFILE]: https://github.com/Quantum-Glitch
-[BANDITPAGE]: https://overthewire.org/wargames/bandit/bandit11.html
