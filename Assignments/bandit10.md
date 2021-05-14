@@ -1,6 +1,6 @@
 # Bandit Level 10 to 11 Writeup
 
-Author: [Akshay K Muraleedharan](https://github.com/Quantum_Glitch)
+Author: [Akshay K Muraleedharan](https://github.com/Quantum-Glitch)
 
 
 Problem Page: [Bandit10](https://overthewire.org/wargames/bandit/bandit11.html)
