@@ -1,4 +1,4 @@
-# Bandit Level 12 to 12 Writeup
+# Bandit Level 12 to 13 Writeup
 
 Author: [Akshay K Muraleedharan](https://github.com/Quantum_Glitch)
 
