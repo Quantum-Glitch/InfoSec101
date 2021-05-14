@@ -5,29 +5,29 @@ Author: [Akshay K Muraleedharan](https://github.com/Quantum_Glitch)
 
 Problem Page: [Bandit12](https://overthewire.org/wargames/bandit/bandit13.html)
 ### List of Commands Used
-* ssh  
+* `ssh`  
 Sets up SSH Connection to the OverTheWire Game Server.
-* mkdir  
+* `mkdir`  
 Makes a new directory.
-* cp  
+* `cp`  
 Copies files.
-* cd  
+* `cd`  
 Changes directory.
-* xxd  
+* `xxd`  
 Used to encode/decode hexdumps.
-* gzip  
+* `gzip`  
 Used for operations related to the gzip compression format.
-* bzip2  
+* `bzip2`  
 Used for operations related to the bzip2 compression format.
-* tar  
+* `tar`  
 Used for operations related to the tar archiving system.
-* mv  
+* `mv`  
 Used to move and rename files.
-* cat
+* `cat`
 Used to concatenate files and output the result to stdout.
-* file
+* `file`
 Outputs the file properties of a given file.
-* ls  
+* `ls`  
 Lists out all the files and diectories under a certain directory.
 ### Walkthrough
 The file data.txt is extremely compressed. Since we will be creating a lot of temporary files along the way, we make a new folder in /tmp directory. The first step is to get the actual compressed file from its hexdump, which is done by the xxd -d command. By default the output goes to stdout, so redirect it into a new file with any suitable filename.  
@@ -38,7 +38,8 @@ Repeat the process (with various other compression formats; use ls and file to k
 ### Password
 * 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ### Bash script to automate the process
-> #!/usr/bin/expect  
+```
+#!/usr/bin/expect  
 spawn ssh -p 2220 bandit12@bandit.labs.overthewire.org  
 expect "password:"  
 send -- "5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu\r"  
@@ -59,3 +60,4 @@ send -- "gzip -d data8.bin.gz\r"
 send -- "cat data8.bin\r"  
 send -- "exit\r"  
 interact
+```
