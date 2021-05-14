@@ -47,7 +47,7 @@ Use tar -xf or -xvf if you want a more detailed description of what's happening.
 ### Password
 * 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ### Bash script to automate the process
-> #!/usr/bin/expect  
+> #!/usr/bin/expect -f  
 spawn ssh -p 2220 bandit12@bandit.labs.overthewire.org  
 expect "password:"  
 send -- "5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu\r"  
