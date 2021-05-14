@@ -35,6 +35,15 @@ Now comes the _tedious_ decompression part. Using ls and file commands, find the
 > I initially tried to just use gzip -d, but it didnt work since we need a .gz file extension for gzip -d or gunzip to work. So use mv and add a filename with .gz at the end.
 
 Repeat the process (with various other compression formats; use ls and file to keep track of the decompression progress, keep descriptive file names so that you dont get lost) until you get a text file. This contains the password.
+
+
+#### Decompressing files in various formats:  
+1. gzip  
+Make sure the file has a .gz extension. Use gzip -d or gunzip.
+2. bzip2  
+Use bzip -d. Redirect the output to a new file.
+3. tar  
+Use tar -xf or -xvf if you want a more detailed description of what's happening. Use ls to find the extracted file.
 ### Password
 * 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 ### Bash script to automate the process
