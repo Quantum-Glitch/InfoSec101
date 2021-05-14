@@ -30,7 +30,9 @@ Outputs the file properties of a given file.
 * ls  
 Lists out all the files and diectories under a certain directory.
 ### Walkthrough
-The file data.txt is extremely compressed. Since we will be creating a lot of temporary files along the way, we make a new folder in /tmp directory. The first step is to get the actual compressed file from its hexdump, which is done by the xxd -d command. By default the output goes to stdout, so redirect it into a new file with any suitable filename.  
+The file data.txt is extremely compressed. Since we will be creating a lot of temporary files along the way, we make a new folder in /tmp directory. The first step is to get the actual compressed file from its hexdump, which is done by the xxd -d command. By default the output goes to stdout, so redirect it into a new file with any suitable filename.
+
+
 Now comes the _tedious_ decompression part. Using ls and file commands, find the file and its type. For the first step, we see that it is a gzip compressed file.  
 > I initially tried to just use gzip -d, but it didnt work since we need a .gz file extension for gzip -d or gunzip to work. So use mv and add a filename with .gz at the end.
 
