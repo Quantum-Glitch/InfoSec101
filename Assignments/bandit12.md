@@ -23,9 +23,9 @@ Used for operations related to the bzip2 compression format.
 Used for operations related to the tar archiving system.
 * mv  
 Used to move and rename files.
-* cat
+* cat  
 Used to concatenate files and output the result to stdout.
-* file
+* file  
 Outputs the file properties of a given file.
 * ls  
 Lists out all the files and diectories under a certain directory.
