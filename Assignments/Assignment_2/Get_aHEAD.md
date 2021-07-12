@@ -1,5 +1,5 @@
 # PicoGym Web Exploitation Writeup
-Author : [Akshay K M](https://github.com/akshaymurali01)
+Author : [Akshay K M](https://github.com/akshaymurali01)  
 Challenge Page: [Get aHEAD](http://mercury.picoctf.net:34561/)
 ## Walkthrough
 The second hint says you need to use something called BurpSuite to look at HTTP requests, intercept and modify them if necessary. So I installed Burp, looked at a quick tutorial for how to use it and set it up.

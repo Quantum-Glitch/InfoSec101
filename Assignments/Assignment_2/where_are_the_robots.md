@@ -1,5 +1,5 @@
 # PicoGym Web Exploitation Writeup
-Author : [Akshay K M](https://github.com/akshaymurali01)
+Author : [Akshay K M](https://github.com/akshaymurali01)  
 Challenge Page: [where are the robots](https://jupiter.challenges.picoctf.org/problem/60915/)
 ## Walkthrough
 The title itself gives a hint on how to proceed. The first hint also points us towards some part of the website where we can hide some part of the website (?). After some googling I found a Stackoverflow post which referenced something called ``robots.txt``.
